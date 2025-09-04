@@ -1,78 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arch LIne Esquadrias </title>
-    <link rel="stylesheet" href="esquadriasstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arch Line Esquadrias</title>
+  <link rel="stylesheet" href="esquadriasstyle.css"/>
 </head>
 <body>
-  
-        <header>
-            <div class="desktopOnly">
-                <div class="topHeader">
-                    <p>Selecione a Loja:</p>
-                    <a href="#">Santa Catarina |</a>
-                    <a href=""> Rio Grande do Sul (Caxias) |</a>
-                    <a href=""> Rio Grande do Sul (Passo Fundo)</a>
-                </div>
-            </div>
-            <div class="SeccondHeader">
-                <img src="Logo_1.png" alt="logo" class="logo01">
-                <nav>
-                    <a href="#">Home - </a>
-                    <a href="#">Contato - </a>
-                    <a href="#">Localizações - </a>
-                    <a href="#">Carreira</a>
-                </nav>
-            </div>
-        </header>
 
+  <header class="header">
+    <div class="desktopOnly">
+        <div class="topHeader">
+            <p>Selecione a Loja:</p>
+            <nav class="topHeader__nav">
+                <a href="#">Santa Catarina</a>
+                <a href="#">Rio Grande do Sul (Caxias)</a>
+                <a href="#">Rio Grande do Sul (Passo Fundo)</a>
+            </nav>
+        </div>
+    </div>
 
-    <section class="nossaHistoria">
-        <h1>Nossa História</h1>
-        <img src="fachada_grande.png" alt="Fachada Loja" class="fachadaimg">
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Fundada em 2015, a <strong>ArchLine</strong> Esquadrias nasceu com o propósito de transformar portas e janelas em soluções modernas, seguras e elegantes para residências e empresas. Desde o início, buscamos unir design contemporâneo com qualidade superior, sempre colocando a satisfação do cliente no centro de cada projeto.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Com o crescimento da confiança em nosso trabalho, em 2020 expandimos nossas operações e inauguramos 3 novas filiais estratégicas, levando nossos produtos e serviços para diferentes regiões.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hoje, contamos com uma equipe de mais de 80 colaboradores especializados, que atuam com dedicação e conhecimento técnico em cada etapa — do atendimento personalizado à instalação final.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Nosso compromisso é simples: entregar esquadrias que valorizam os espaços, aumentam o conforto e proporcionam segurança, sempre acompanhando as tendências do setor e mantendo a inovação como pilar central.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Na <strong>ArchLine </strong>Esquadrias, cada linha traçada é uma ponte entre a sua ideia e a realização do seu espaço.
+    <div class="header2">
+        <img src="Logo_1.png" alt="Logo Arch Line"/>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contato</a>
+            <a href="#">Localizações</a>
+            <a href="#">Carreira</a>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+        <section class="nossaHistoria">
+        <h1 class="sectionTitle">Nossa História</h1>
+
+        <img
+            src="fachada_grande.png"
+            alt="Fachada da loja Arch Line"
+            class="fachadaimg"
+        />
+
+        <p class="nossaHistoria__texto">
+            Fundada em 2015, a <strong>ArchLine</strong> Esquadrias nasceu com o propósito
+            de transformar portas e janelas em soluções modernas, seguras e elegantes
+            para residências e empresas. Desde o início, buscamos unir design
+            contemporâneo com qualidade superior, sempre colocando a satisfação do
+            cliente no centro de cada projeto.
+            <br/><br/>
+            Com o crescimento da confiança em nosso trabalho, em 2020 expandimos
+            nossas operações e inauguramos 3 novas filiais estratégicas, levando nossos
+            produtos e serviços para diferentes regiões.
+            <br/><br/>
+            Hoje, contamos com uma equipe de mais de 80 colaboradores especializados,
+            que atuam com dedicação e conhecimento técnico em cada etapa — do
+            atendimento personalizado à instalação final.
+            <br/><br/>
+            Nosso compromisso é simples: entregar esquadrias que valorizam os
+            espaços, aumentam o conforto e proporcionam segurança, sempre
+            acompanhando as tendências do setor e mantendo a inovação como pilar
+            central.
+            <br/><br/>
+            Na <strong>ArchLine</strong> Esquadrias, cada linha traçada é uma ponte entre a sua
+            ideia e a realização do seu espaço.
         </p>
     </section>
 
-    <section class="servicosWhole">
-        <h1 class="servicosTitle">Servicos</h1>
-        <div class="psm">
-            <h2>Projetos Sobre Medida</h2>
-            <p>Desenvolvemos esquadrias personalizadas em alumínio, vidro e PVC, adaptadas ao estilo de cada cliente. Desde janelas panorâmicas até portas de correr modernas, entregamos soluções que unem estética e funcionalidade.</p>
-            <img src="psm_image.png" alt="Imagem de Projetos" class="psm_image">
-        </div>
+    <section class="servicos">
+        <h1 class="sectionTitle">Serviços</h1>
 
-        <div class="ime">    
+        <article class="servicoCard">
+            <h2>Projetos Sob Medida</h2>
+            <p>
+            Desenvolvemos esquadrias personalizadas em alumínio, vidro e PVC,
+            adaptadas ao estilo de cada cliente. Desde janelas panorâmicas até
+            portas de correr modernas, entregamos soluções que unem estética e
+            funcionalidade.
+            </p>
+            <img src="psm_image.png" alt="Projetos sob medida" />
+        </article>
+
+        <article class="servicoCard2">
             <h2>Instalação e Manutenção Especializada</h2>
-            <p>Nossa equipe técnica garante uma instalação precisa e segura, além de oferecer planos de manutenção preventiva e corretiva, aumentando a durabilidade e o desempenho das esquadrias.</p>
-            <img src="ime_image.png" alt="Imagem de Manutencao" class="ime_image">
-        </div>    
+            <p>
+            Nossa equipe técnica garante uma instalação precisa e segura, além de
+            oferecer planos de manutenção preventiva e corretiva, aumentando a
+            durabilidade e o desempenho das esquadrias.
+            </p>
+            <img src="ime_image.png" alt="Instalação e manutenção" />
+        </article>
 
-        <div class="cda">
-            <h2>Consultoria em Desing Arquitetônico</h2>
-            <p>Auxiliamos arquitetos, engenheiros e clientes finais na escolha de modelos, cores e acabamentos, garantindo que as esquadrias se integrem de forma harmoniosa e sofisticada aos projetos.</p>
-            <img src="cda_image.png" alt="Imagem de Manutencao" class="cda_image">
-        </div>
+        <article class="servicoCard">
+            <h2>Consultoria em Design Arquitetônico</h2>
+            <p>
+            Auxiliamos arquitetos, engenheiros e clientes finais na escolha de
+            modelos, cores e acabamentos, garantindo integração harmoniosa e
+            sofisticada aos projetos.
+            </p>
+            <img src="cda_image.png" alt="Consultoria em design" />
+        </article>
     </section>
 
-        <section class="depoimentos">
-            <h1>Confira o que os nossos Clientes reportam!</h1>
+    <h1 class="sectionTitle">Confira o que os nossos clientes reportam!</h1>
 
-            <div class>
+    <section class="depoimentos">
+        
+      <div class="depoimento depoimento1">
+            <div class="depoimentoUsuario">
+                <img src="camera_facing_woman_psnwnrpdd3zix30ovhey_2.png" alt="user_photo">
                 <h3>Renata Lima</h3>
-                <p>Fiquei muito contente com a esquadria, o acabamento tá muito bonito e combina super bem com o restante da casa. A vedação contra vento e barulho é ótima, a gente percebe a diferença logo que fecha a janela. O material parece bem resistente e ao mesmo tempo fácil de limpar, não dá aquele trabalho todo que eu imaginava. Acho que acertei na escolha, recomendo pra quem quer algo bonito e pratico.</p>
+                <p>
+                    <i>"Fiquei muito contente com a esquadria, o acabamento está muito bonito e combina
+                    super bem com o restante da casa. A vedação contra vento e barulho é ótima, a
+                    gente percebe a diferença logo que fecha a janela. O material parece resistente e
+                    fácil de limpar. Acho que acertei na escolha — recomendo para quem quer algo
+                    bonito e prático."</i>
+                </p>
             </div>
+        </div>
 
-        </section>  
+        <div class="depoimento depoimento2">
+            <div class="depoimentoUsuario">
+                <img src="camera_facing_guy_0q2eg2rtxt4fsamwuks9_3.png" alt="user_photo">
+                <h3>Chavier Francisco</h3>
+                <p>
+                    <i>"muito bom nao faz barulho e isola muito bem o som com certeza vou voltar a fazer negocios"</i>
+                </p>
+            </div>
+        </div>
 
+        <div class="ContatoWhole">
+            <div class="formulario">
+                <h1 class="sectionTitle">Contato:</h1>
+                <form action="" class="container">
+                    <label for="nome" class="formNameLabel">Nome:</label>
+                    <input type="text" id="name" name="name" class="inputNome"></input>
+                    <label for="email" class="formEmailLabel">Email:</label>
+                    <input type="email" placeholder="EX: abcdefg@arch.com" class="inputEmail">
+                    <label for="mensagem" class="formMessageLabel">Mensagem:</label>
+                    <textarea rows="5" cols="35" class="textarea"></textarea>
+                </form>
+            </div>
+        </div>
+    </section>
+  </main>
 
+  <footer>
+    <p>test</p>
+  </footer>
 
 </body>
 </html>
