@@ -9,18 +9,18 @@
 
 
 /* ---------------- */
-.desktopOnly{
+.header__desktop-only{
     display:none;
 }
 /* ---------------- */
 
 /* Header Principal  */
-.header2 img{
+.header_img{
     max-width: 100%;
     max-height: 100%;
 }
 
-.header2{
+.header__navecagao-principal{
     height: 14vh;
     background-color: rgb(230, 230, 230);
 
@@ -29,20 +29,20 @@
     justify-content: space-around;
 }
 
-.header2 nav{
+.header__navegacao-principal__nav{
     display: flex;
     flex-direction: column;
     gap: 1vw;
 }
 
-.header2 a{
+.header__navecagao-principal__link{
     color: #5f5f5f;
     transition: 0.5s ease;
 }
 /* Fim Header Principal */
 
 /* Nossa história */
-.nossaHistoria{
+.historia{
     height: auto;
     min-height: 100vw;
     display: grid;
@@ -54,19 +54,19 @@
     padding-bottom: 2vh;
 }
 
-.nossaHistoria h1{
+.historia__h1{
     font-size: 1.5rem;
     grid-column: 2;
 }
 
-.nossaHistoria .fachadaimg{
+.historia__imagem{
     max-height: 50vh;
     grid-column: 2;
     justify-self: center;
     align-self: center;
 }
 
-.nossaHistoria .nossaHistoria__texto{
+.historia__texto{
     grid-column: 2;
 }
 /* Fim de nossa história (poético) */
@@ -75,9 +75,6 @@
 .servicos{
     background-color: #d3d3d3;
     grid-template-columns: 1fr 8fr 1fr;
-}
-.servicos .sectionTitle{
-    padding-bottom: 2vh;
 }
 .servicos{
     padding-top: 2vh;
@@ -88,13 +85,13 @@
     text-align: center;
 }
 
-.servicos .servicoCard{
+.servico_article{
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     gap: 1vh;
 }
 
-.servicos img {
+.servico__img {
     border-radius: 8px;
 
     max-height: 90%;
@@ -106,38 +103,40 @@
     justify-self: center;
 }
 
-.servicos h2{
+.servico__titulo{
     grid-column: 2;
 }
 
-.servicos p{
+.servico__texto{
     grid-column: 2;
 }
 /* FIM DOS SERVICOS
 
 INICIO DOS DEPOIMENTOS */
-.depoimentoUsuario{
+.depoimento__usuario{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-columns: 1fr 2fr 6fr 1fr;
 }
 
-.sectionTitle{
+.historia__h1{
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 2vh;
     padding-top: 2vh;
 }
 
-.depoimentoUsuario h3{
+/* ////////////////////// */
+
+.depoimento__usuario__nome{
     grid-column: 3;
 }
 
-.depoimentoUsuario p{
+.depoimento__usuario__texto{
     grid-column: 3/4;    
 }
 
-.depoimentoUsuario img{
+.depoimento__usuario__foto{
     border-radius:50%;
     max-height: 90%;
     max-width: 10vh;
@@ -155,60 +154,54 @@ FIM DOS DEPOIMENTOS
 
 INICIO DO FORMULARIO */
 
-.container{
+.forumulario__form{
     display: grid;
     gap: 1vh;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: 1.5rem 1.5rem 2fr;
 }
 
-.formulario .formNameLabel{
+.formulario__label__nome{
     grid-column: 2;
     grid-row: 1;
 }
 
-.formulario .inputNome{
+.formulario__input__nome{
     grid-column: 3/6;
     grid-row: 1;
 }
 
-.formulario .formEmailLabel{
+.formulario__label__email{
     grid-column: 2;
     grid-row: 2;
 }
 
-.formulario .inputEmail{
+.formulario__input__email{
     grid-column: 3/6;
     grid-row:2;
 }
 
-.formulario .formMessageLabel{
+.formulario__label__mensagem{
     grid-column:2;
     grid-row:3;
 }
 
-.formulario .textarea{
+.formulario__textarea__mensagem{
     grid-column: 3/6;
     grid-row:3
 }
 
-textarea{
+.textarea{
     resize: none;
     border-radius: 4px;
     border-color:#0164BE;
 }
 
-input{
+.input{
     border-radius: 4px;
     border-color:#0164BE;
 }
 
-footer{
-    height: 40vh;
-
-    background-color: #5f5f5f;
-    color: white;
-}
 
 .formulario{
     padding-top: 2vh;
@@ -218,13 +211,13 @@ footer{
 @media (min-width: 1024px) {
 
  /* Informações de cima */
-  .desktopOnly { 
+  .header__desktop-only { 
     display: flex;
     height: 1vw;
     text-align: center;
  }
 
- .topHeader{
+ .header__top-bar{
     width: 100%;
     display: flex;
     background-color: rgb(8, 8, 77);
@@ -235,18 +228,18 @@ footer{
     font-size: 0.65rem;
  }
 
- .topHeader nav{
+ .header__nav{
     display: flex;
     gap: 2vw;
     text-decoration: none;
  }
 
- .topHeader a{
+.header__link{
     color: whitesmoke;
     transition: ease 0.5s;
  }
 
- .topHeader a:hover{
+.header__link:hover{
     transition: ease 0.5s;
     color: rgb(121, 166, 226);
     font-size: 0.66rem;
@@ -254,20 +247,20 @@ footer{
 /*  Fim das informações de cima */
 
 /* Header principal */
-.header2 nav{
+.header__navegacao-principal__nav{
     display: flex;
     flex-direction: row;
     gap: 2vw;
 }
 
-.header2 a:hover{
+.header__navecagao-principal__link:hover{
     transition: 0.5s ease;
     color: #0164BE;
 }
 /* Fim header Principal */
 
 /* Nossa história */
-.nossaHistoria{
+.historia{
     height: auto;
     min-height: 100vh;
     display: grid;
@@ -278,14 +271,14 @@ footer{
     column-gap: 1vw;
 }
 
-.nossaHistoria h1{
+.historia__h1{
     font-size: 1.5rem;
     grid-column-start: 4;
     grid-row: 2;
     align-self:center;
 }
 
-.nossaHistoria .fachadaimg{
+.historia__imagem{
     max-height: 80vh;
     grid-column: 2;
     grid-column-end: 3;
@@ -295,7 +288,7 @@ footer{
     border-radius:8px;
 }
 
-.nossaHistoria .nossaHistoria__texto{
+.historia__texto{
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 3;
@@ -309,7 +302,7 @@ footer{
 .servicos{
     height: 120vh;
 }
-.servicos .servicoCard, .servicoCard2{
+.servico_article, .servico_article2{
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 4fr 4fr 1fr;
     grid-template-rows: 20% 20% 20% 20% 20%;
@@ -319,7 +312,7 @@ footer{
     line-height: 2em;
 }
 
-.servicos .servicoCard img{
+.servico__img{
     max-height: 95%;
     max-width: 30vw;
 
@@ -327,19 +320,19 @@ footer{
     grid-row:1/5;
 }
 
-.servicos .servicoCard h2{
+.servico__titulo{
     grid-column: 4/6;
     grid-row:1;
 
     align-self: center;
 }
 
-.servicos .servicoCard p{
+.servico__texto{
     grid-column: 4/6;
     grid-row:2/4;
 }
 
-.servicos .servicoCard2 img{
+.servico__img2{
     max-height: 95%;
     max-width: 30vw;
 
@@ -347,15 +340,15 @@ footer{
     grid-row:1/5;
 }
 
-.servicos .servicoCard2 h2{
+.servico__titulo2{
     grid-column: 2/4;
     grid-row:1/2;
 
     align-self: center;
 }
 
-.servicos .servicoCard2 p{
+.servico__texto2{
     grid-column: 2/4;
     grid-row:2/4;
 }
-
+}

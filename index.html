@@ -9,39 +9,39 @@
 <body>
 
   <header class="header">
-    <div class="desktopOnly">
-        <div class="topHeader">
-            <p>Selecione a Loja:</p>
-            <nav class="topHeader__nav">
-                <a href="#">Santa Catarina</a>
-                <a href="#">Rio Grande do Sul (Caxias)</a>
-                <a href="#">Rio Grande do Sul (Passo Fundo)</a>
+    <div class="header__desktop-only">
+        <div class="header__top-bar">
+            <p class="header__paragraph">Selecione a Loja:</p>
+            <nav class="header__nav">
+                <a href="#" class="header__link">Santa Catarina</a>
+                <a href="#" class="header__link">Rio Grande do Sul (Caxias)</a>
+                <a href="#" class="header__link">Rio Grande do Sul (Passo Fundo)</a>
             </nav>
         </div>
     </div>
 
-    <div class="header2">
-        <img src="Logo_1.png" alt="Logo Arch Line"/>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Contato</a>
-            <a href="#">Localizações</a>
-            <a href="#">Carreira</a>
+    <div class="header__navecagao-principal">
+        <img src="Logo_1.png" alt="Logo Arch Line" class="header_img"/>
+        <nav class="header__navegacao-principal__nav">
+            <a href="#" class="header__navecagao-principal__link">Home</a>
+            <a href="#" class="header__navecagao-principal__link">Contato</a>
+            <a href="#" class="header__navecagao-principal__link">Localizações</a>
+            <a href="#" class="header__navecagao-principal__link">Carreira</a>
         </nav>
     </div>
   </header>
 
   <main>
-        <section class="nossaHistoria">
-        <h1 class="sectionTitle">Nossa História</h1>
+        <section class="historia">
+        <h1 class="historia__h1">Nossa História</h1>
 
         <img
             src="fachada_grande.png"
             alt="Fachada da loja Arch Line"
-            class="fachadaimg"
+            class="historia__imagem"
         />
 
-        <p class="nossaHistoria__texto">
+        <p class="historia__texto">
             Fundada em 2015, a <strong>ArchLine</strong> Esquadrias nasceu com o propósito
             de transformar portas e janelas em soluções modernas, seguras e elegantes
             para residências e empresas. Desde o início, buscamos unir design
@@ -67,49 +67,49 @@
     </section>
 
     <section class="servicos">
-        <h1 class="sectionTitle">Serviços</h1>
+        <h1 class="servicos__title">Serviços</h1>
 
-        <article class="servicoCard">
-            <h2>Projetos Sob Medida</h2>
-            <p>
+        <article class="servico_article">
+            <h2 class="servico__titulo">Projetos Sob Medida</h2>
+            <p class="servico__texto">
             Desenvolvemos esquadrias personalizadas em alumínio, vidro e PVC,
             adaptadas ao estilo de cada cliente. Desde janelas panorâmicas até
             portas de correr modernas, entregamos soluções que unem estética e
             funcionalidade.
             </p>
-            <img src="psm_image.png" alt="Projetos sob medida" />
+            <img src="psm_image.png" alt="Projetos sob medida" class="servico__img"/>
         </article>
 
-        <article class="servicoCard2">
-            <h2>Instalação e Manutenção Especializada</h2>
-            <p>
+        <article class="servico_article2">
+            <h2 class="servico__titulo2">Instalação e Manutenção Especializada</h2>
+            <p class="servico__texto2">
             Nossa equipe técnica garante uma instalação precisa e segura, além de
             oferecer planos de manutenção preventiva e corretiva, aumentando a
             durabilidade e o desempenho das esquadrias.
             </p>
-            <img src="ime_image.png" alt="Instalação e manutenção" />
+            <img src="ime_image.png" alt="Instalação e manutenção" class="servico__img2"/>
         </article>
 
-        <article class="servicoCard">
-            <h2>Consultoria em Design Arquitetônico</h2>
-            <p>
+        <article class="servico_article">
+            <h2 class="servico__titulo">Consultoria em Design Arquitetônico</h2>
+            <p class="servico__texto">
             Auxiliamos arquitetos, engenheiros e clientes finais na escolha de
             modelos, cores e acabamentos, garantindo integração harmoniosa e
             sofisticada aos projetos.
             </p>
-            <img src="cda_image.png" alt="Consultoria em design" />
+            <img src="cda_image.png" alt="Consultoria em design" class="servico__img"/>
         </article>
     </section>
 
-    <h1 class="sectionTitle">Confira o que os nossos clientes reportam!</h1>
+    <h1 class="depoimentos__titulo titulo">Confira o que os nossos clientes reportam!</h1>
 
-    <section class="depoimentos">
+    <section class="depoimentos"> 
         
       <div class="depoimento depoimento1">
-            <div class="depoimentoUsuario">
-                <img src="camera_facing_woman_psnwnrpdd3zix30ovhey_2.png" alt="user_photo">
-                <h3>Renata Lima</h3>
-                <p>
+            <div class="depoimento__usuario">
+                <img src="camera_facing_woman_psnwnrpdd3zix30ovhey_2.png" alt="user_photo" class="depoimento__usuario__foto">
+                <h3 class="depoimento__usuario__nome">Renata Lima</h3>
+                <p class="depoimento__usuario__texto">
                     <i>"Fiquei muito contente com a esquadria, o acabamento está muito bonito e combina
                     super bem com o restante da casa. A vedação contra vento e barulho é ótima, a
                     gente percebe a diferença logo que fecha a janela. O material parece resistente e
@@ -120,34 +120,30 @@
         </div>
 
         <div class="depoimento depoimento2">
-            <div class="depoimentoUsuario">
-                <img src="camera_facing_guy_0q2eg2rtxt4fsamwuks9_3.png" alt="user_photo">
-                <h3>Chavier Francisco</h3>
-                <p>
+            <div class="depoimento__usuario">
+                <img src="camera_facing_guy_0q2eg2rtxt4fsamwuks9_3.png" alt="user_photo" class="depoimento__usuario__foto">
+                <h3 class="depoimento__usuario__nome">Chavier Francisco</h3>
+                <p class="depoimento__usuario__texto">
                     <i>"muito bom nao faz barulho e isola muito bem o som com certeza vou voltar a fazer negocios"</i>
                 </p>
             </div>
         </div>
 
-        <div class="ContatoWhole">
+        <div class="contato">
             <div class="formulario">
-                <h1 class="sectionTitle">Contato:</h1>
-                <form action="" class="container">
-                    <label for="nome" class="formNameLabel">Nome:</label>
-                    <input type="text" id="name" name="name" class="inputNome"></input>
-                    <label for="email" class="formEmailLabel">Email:</label>
-                    <input type="email" placeholder="EX: abcdefg@arch.com" class="inputEmail">
-                    <label for="mensagem" class="formMessageLabel">Mensagem:</label>
-                    <textarea rows="5" cols="35" class="textarea"></textarea>
+                <h1 class="contato__titulo titulo">Contato:</h1>
+                <form action="" class="forumulario__form">
+                    <label for="nome" class="formulario__label__nome">Nome:</label>
+                    <input type="text" id="name" name="name" class="formulario__input__nome input input" ></input>
+                    <label for="email" class="formulario__label__email">Email:</label>
+                    <input type="email" placeholder="EX: abcdefg@arch.com" class="formulario__input__email input">
+                    <label for="mensagem" class="formulario__label__mensagem">Mensagem:</label>
+                    <textarea rows="5" cols="35" class="formulario__textarea__mensagem textarea"></textarea>
                 </form>
             </div>
         </div>
     </section>
   </main>
-
-  <footer>
-    <p>test</p>
-  </footer>
 
 </body>
 </html>
